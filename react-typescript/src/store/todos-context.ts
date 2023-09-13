@@ -32,7 +32,7 @@ const TodosContextProvider: React.FC = (props) => {
     removeTodo: removeTodoHandler
   };
   return (
-    <TodosContext.Provider value={contextValue}></TodosContext.Provider> 
+    <TodosContext.Provider value={contextValue}>{props.children}</TodosContext.Provider> 
   );
 }
 
